@@ -1,0 +1,28 @@
+.choose {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.choose-title{
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+}
+
+.choose-paragraph{
+font-family: "Montserrat", sans-serif;
+font-weight: 500px;
+text-align: center;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color:#737373;
+width: 470px;
+height: 40px;
+}

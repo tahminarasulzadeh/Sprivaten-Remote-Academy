@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home-title,
+.home-text,
+.home-buttons button {
+    font-family: "Montserrat", sans-serif;
+    ;
+    letter-spacing: 0.2px;
+}
+
+.home-card {
+    margin-top: 10%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+.home-title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 80px;
+
+}
+
+.home-text {
+    width: 539px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #737373;
+
+}
+
+.home-buttons {
+    display: flex;
+
+}
+
+.home-buttons button {
+    height: 48px;
+    border-radius: 37px;
+    padding: 10px 36px 10px 36px;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.home-button-quote {
+    width: 185px;
+    border-color: transparent;
+    color: #fff;
+    background-color: #00A0C1;
+    margin-right: 15px;
+
+}
+
+.home-button-quote:hover {
+    background-color: transparent;
+    color: #00A0C1;
+    border: 1px solid #00A0C1;
+    transition: 1s ease;
+}
+
+.home-button-learn {
+    width: 154px;
+    border: 1px solid #00A0C1;
+    color: #00A0C1;
+    background-color: transparent;
+}
+
+.home-button-learn:hover {
+    border: none;
+    color: #fff;
+    background-color: #00A0C1;
+    transition: 1s ease;
+}
+

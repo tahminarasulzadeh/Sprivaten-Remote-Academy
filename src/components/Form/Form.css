@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.home-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 328px;
+    height: 619px;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 20px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+
+
+.home-form-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    left: 0.1px;
+
+}
+
+.home-form label {
+    width: 50px;
+    color: #252B42;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.home-form input {
+    width: 245px;
+ 
+}
+
+.home-form input,
+.home-form select {
+    height: 50px;
+    background-color: #F9F9F9;
+    margin-left: 2.5px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding-left: 21px;
+  
+}
+
+
+.home-form select {
+    width: 270px;
+    color: #737373;
+
+}
+
+.home-form option {}
+
+.home-form input::placeholder,
+.home-form select {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.home-form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.home-form-btn {
+    width: 248px;
+    height: 58px;
+    border-radius: 5px;
+    background-color: #FFA62B !important;
+    border: none;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px  !important;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer !important;
+}
