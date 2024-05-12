@@ -1,0 +1,51 @@
+.client-card {
+    width: 330px;
+    height: 244px;
+    border-end-end-radius: 5px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+
+.client-card-content {
+  padding: 30px 35px 30px 35px;
+  
+}
+.star{
+    width: 18.34px;
+    height: 18.35px;
+    margin-top: 1.83px;
+    margin-left: 1.83px;
+    color:#F3CD03;   
+}
+
+.client-card-text{
+    width: 234px;
+    height: 72px;
+    color: #737373;
+}
+.client-data{
+    margin-top: 5%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.client-card-text,.client-name , .client-work{
+   margin-top: 5%;
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  
+}
+.client-name-work {
+    margin-left: 10px;
+}
+.client-name{
+    color: #FFA62B;
+    margin-bottom: 0;
+}
+.client-work{
+    margin: 0;
+    color: #252B42;
+}

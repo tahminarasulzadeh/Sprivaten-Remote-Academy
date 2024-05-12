@@ -1,0 +1,9 @@
+.client {
+    background-color:#f3f3f3
+}
+.client-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 8%;
+}

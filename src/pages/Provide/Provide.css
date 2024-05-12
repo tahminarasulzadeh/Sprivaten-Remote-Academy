@@ -1,0 +1,22 @@
+
+
+
+.provide-video{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.provide-video video{
+    width: 877px;
+    height: 447x;
+    margin-bottom: -400px;
+}
+.provide-bg{ 
+    max-width: 100%;
+    height: 407px;
+    background-color: #16697A
+}
+
+
+
+
