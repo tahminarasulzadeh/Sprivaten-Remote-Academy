@@ -1,0 +1,135 @@
+.footer {
+    width: 100%;
+    background-color: #252B42;
+    padding-bottom: 50px;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header h3 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #fff;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4%;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.youtube {
+    width: 24px;
+    height: 24px;
+    cursor:pointer
+}
+
+.facebook {
+    color: #335BF5;
+}
+
+.instagram {
+    color: #E51F5A
+}
+
+.twitter {
+    color: #21A6DF
+
+}
+
+.youtube {
+    color: #E42F08;
+}
+
+.footer hr {
+    margin-top: 5%;
+    opacity: 0.2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+.footer-info h5{
+ font-family: "Montserrat" sans-serif;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: 0.1px;
+ color: #fff;
+}
+
+.footer-info a{
+  /* width: 69px; */
+  height: 24px;
+  font-family: "Montserrat" sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #bdbdbd;
+}
+
+
+.footer-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.footer-input input {
+  width: 301px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  padding-left: 20px;
+
+}
+
+.footer-input input::placeholder{
+    font-family: "Montserrat" sans-serif;
+    font-weight: 400;
+    font-family: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #bdbdbd;
+  
+}
+.footer-input button {
+    width: 117px;
+    height: 60px;
+    padding: 0px 5px 5px 0px;
+    background-color: #ffa62b;
+    border-radius: 0px 5px 5px 0px;
+    padding-top: 2%;
+    
+    /* BTN TEXT */
+
+    font-family: "Montserrat" sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #E6E6E6;
+    position: absolute;     
+    right: 1px;
+}
