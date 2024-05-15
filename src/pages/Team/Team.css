@@ -1,6 +1,21 @@
+
+
 .team-cards {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-card-contents {
     margin-top: 5%;
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+@media only screen and (max-width: 968px){
+    .team-card-contents{
+        flex-direction: column;
+    }
 }

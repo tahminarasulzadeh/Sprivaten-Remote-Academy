@@ -13,9 +13,12 @@ const Team = () => {
                     the two major realms of Classical physics: Newtonian mechanics </p>
 
                 <div className="team-cards">
+                    <div className="team-card-contents">
                     <Card cardImg ={Cover1} cardName ="Avie Beaton" position = "CO Founder"/>
                     <Card cardImg={Cover2} cardName="Ben Jonson" position = "Consultant" />
                     <Card cardImg={Cover3} cardName="Ashley Fletcher" position = "CEO"/>
+                    </div>
+                    
                 </div>
             </div>
         </div>

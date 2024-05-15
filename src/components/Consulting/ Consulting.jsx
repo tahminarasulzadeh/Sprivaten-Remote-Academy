@@ -7,8 +7,10 @@ const Consulting  = () => {
                 <h3>Consulting Agency For Your Business</h3>
                 <p>the quick fox jumps over the lazy dog</p>
             </div>
-
-            <button className="consulting-btn">Contact Us</button>
+<div className="consulting-btn">
+<button>Contact Us</button>
+</div>
+            
         </div>
     )
 };

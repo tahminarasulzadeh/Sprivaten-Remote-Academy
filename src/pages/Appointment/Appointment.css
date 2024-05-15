@@ -11,3 +11,21 @@
     display: flex;
     justify-content: left;
 }
+
+@media only screen and (max-width: 968px) {
+    .appointment{
+        padding: 5%;
+    }
+    .appointment-form {
+        justify-content: center;
+    }
+
+
+    .appointment-form {
+        display: flex;
+        justify-content: center;
+        /* width: 400px; */
+    }
+
+
+}

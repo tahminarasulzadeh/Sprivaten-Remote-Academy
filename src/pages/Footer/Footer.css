@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #252B42;
     padding-bottom: 50px;
+    
 }
 
 .footer-header {
@@ -60,6 +61,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .footer-info {
@@ -114,7 +116,7 @@
 }
 .footer-input button {
     width: 117px;
-    height: 60px;
+    height: 56px;
     padding: 0px 5px 5px 0px;
     background-color: #ffa62b;
     border-radius: 0px 5px 5px 0px;
@@ -132,4 +134,27 @@
     border: 1px solid #E6E6E6;
     position: absolute;     
     right: 1px;
+}
+
+@media only screen and (max-width: 968px) {
+   .footer-header {
+    flex-direction: column;
+    justify-content: left;
+   }
+
+.footer-socials{
+    justify-content: left;
+}
+.footer-header h3{
+    text-align: left;
+}
+
+.footer-content{
+    flex-direction: column;
+}
+.get-intouch{
+display: flex;
+justify-content: left;
+}
+
 }

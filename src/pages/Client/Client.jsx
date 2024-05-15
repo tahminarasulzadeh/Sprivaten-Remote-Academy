@@ -4,7 +4,7 @@ import client1 from '../../assets/client1.png';
 import client2 from '../../assets/client2.png';
 const Client = () => {
 
-const client_opinion = `
+  const client_opinion = `
  Slate helps you see how many
  more days you need to work to
  reach your financial goal.
@@ -18,9 +18,12 @@ const client_opinion = `
           the two major realms of Classical physics: Newtonian mechanics  </p>
 
         <div className="client-cards">
-          <Card clientImg={client1} clientName="Regina Miles" clientWork="Designer" clientOp = {client_opinion} />
-          <Card clientImg={client1} clientName="Regina Miles" clientWork="Designer" clientOp = {client_opinion}/>
-          <Card clientImg={client2} clientName="Regina Miles" clientWork="Designer"  clientOp = {client_opinion}/>
+          <div className="client-test">
+          <Card clientImg={client1} clientName="Regina Miles" clientWork="Designer" clientOp={client_opinion} />
+          <Card clientImg={client1} clientName="Regina Miles" clientWork="Designer" clientOp={client_opinion} />
+          <Card clientImg={client2} clientName="Regina Miles" clientWork="Designer" clientOp={client_opinion} />
+          </div>
+          
         </div>
       </div>
     </div>

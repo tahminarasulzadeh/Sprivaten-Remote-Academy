@@ -1,9 +1,30 @@
 .client {
-    background-color:#f3f3f3
+    background-color: #f3f3f3;
 }
-.client-cards {
+
+.client-test{
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.client-cards {
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+@media only screen and (max-width: 968px) {
+ 
+.client-test{
+  flex-direction: column; 
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+}
 }

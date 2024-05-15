@@ -8,11 +8,14 @@ const Choose = () => {
     return (
         <div className="container choose">
             <div className="choose-content">
+               
+              <div className="choose-paragraph">
                 <h2 className="title">WHY CHOOSE US</h2>
-                <div className="choose-paragraph">
                     <p className="text">Problems trying to resolve the conflict between<br />
                         the two major realms of Classical physics: Newtonian mechanics </p>
+          
                 </div>
+               
 
 
                 <div className="choose-cards">

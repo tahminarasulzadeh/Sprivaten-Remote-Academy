@@ -4,6 +4,10 @@
     border: 1px solid #eeeeee;
 }
 
+.team-card-content{
+    display: flex;
+    flex-direction: column !important;
+}
 .team-card-name {
     font-weight: 700;
     font-size: 16px;

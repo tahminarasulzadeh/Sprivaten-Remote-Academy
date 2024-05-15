@@ -16,7 +16,7 @@ const Footer = () => {
                         <FaYoutube className='youtube' />
                     </div>
                 </div>
-                <hr  />
+                <hr />
                 <div className="footer-content">
                     <div className="footer-info">
                         <h5>Company Info</h5>
@@ -49,22 +49,24 @@ const Footer = () => {
                         <a href="#">Customers</a>
                         <a href="#">API</a>
                     </div>
-
-                    <div className="footer-info">
-                        <h5>Get In Touch</h5>
-                        <div className="footer-input">
-                            <input type="email" name="email" placeholder="Your Email" />
-                            <button>Subscribe</button>
+                    <div className="get-intouch">
+                        <div className="footer-info">
+                            <h5>Get In Touch</h5>
+                            <div className="footer-input">
+                                <input type="email" name="email" placeholder="Your Email" />
+                                <button>Subscribe</button>
+                            </div>
+                            <a href="#">Lorem impsum dolor amit</a>
                         </div>
-                        <a href="#">Lorem impsum dolor amit</a>
+
                     </div>
 
-                    
+
                 </div>
 
-            
+
             </div>
-       
+
         </div>
     )
 }

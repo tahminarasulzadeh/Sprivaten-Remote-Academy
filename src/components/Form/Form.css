@@ -91,3 +91,14 @@
     line-height: 28px;
     cursor: pointer !important;
 }
+
+.home-form input:focus,
+.home-form select:focus{
+    outline: none;
+} 
+
+@media only screen and (max-width: 768px){
+    .home-form {
+        margin-left: 0;
+    }
+}

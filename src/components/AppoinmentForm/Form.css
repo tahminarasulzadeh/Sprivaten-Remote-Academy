@@ -90,15 +90,32 @@
     gap: 10px;
     border: none;
     background-color: #ffa62b;
-    
-     /* BTN TEXT */
 
-     font-family: "Montserrat" sans-serif;
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 28px;
-     letter-spacing: 0.2px;
-     text-align: center;
-     color: #fff;
-     cursor: pointer;
+    /* BTN TEXT */
+
+    font-family: "Montserrat" sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 968px) {
+    .contact-form-content {
+        width: 592px;
+
+    }
+    .name-email input {
+        width: 180px;
+    }
+    .department-time select{
+        width: 180px !important;
+    }
+    .contact-form-items textarea {
+        width: 370px;
+    }
+    
 }
