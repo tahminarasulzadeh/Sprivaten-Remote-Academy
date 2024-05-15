@@ -1,7 +1,6 @@
 .card-item {
     display: flex;
     flex-direction: column;
-
 }
 
 .card-header {
@@ -18,15 +17,17 @@
 .card-img {
     width: 72px;
     height: 72px;
-    border-radius: 200px;
+    border-radius: 50%;
     background-color: #fff;
 }
 
 .card-img img {
+    display: inline-block;
     width: 32px;
     height: 26.35px;
     margin-top: 23px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .choose-card-title {
@@ -38,12 +39,10 @@
     color: #252B42;
     margin-left: 5%;
 }
-.card-item {
-    margin-left: 20px;
-}
+
 .card-content {
     width: 328px;
-    height: 253px;
+    height: 350px;
     border-radius: 11px;
     padding: 30px 50px 30px 50px;
     border: 1px solid #A9D6FF;

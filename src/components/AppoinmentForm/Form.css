@@ -40,9 +40,12 @@
     margin-top: 5%;
 }
 
+.name-email input{
+    width: 286px;
+}
 .name-email input,
 .department-time select {
-    width: 286px;
+
     height: 50px;
     padding-left: 15px;
     border-radius: 5px;
@@ -51,7 +54,7 @@
 }
 
 .department-time select {
-    width: 300px !important;
+    width: 300px !important
 }
 
 .name-email input::placeholder,
@@ -111,8 +114,9 @@
     .name-email input {
         width: 180px;
     }
+    
     .department-time select{
-        width: 180px !important;
+        width: 200px  !important;
     }
     .contact-form-items textarea {
         width: 370px;
