@@ -12,7 +12,7 @@ const Form = () => {
                 </div>
                 <div className="department-time">
 
-                    <select name="department" id="department">
+                    {/* <select name="department" id="department">
                         <option selected>Please Select</option>
                         <option value="sales">Sales</option>
                         <option value="marketing">Marketing</option>
@@ -24,7 +24,7 @@ const Form = () => {
                         <option selected>4:00 Available</option>
                         <option value="3:20">3:20</option>
                         <option value="7:30">7:30</option>
-                    </select>
+                    </select> */}
                 </div>
                <textarea name="message" id="message"  placeholder='Message'></textarea>
 
