@@ -1,33 +1,14 @@
 import '../Form/Form.css'
 import { useEffect } from 'react';
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContent, getAppointment } from '../../redux/reducers/appointmentSlice';
-
-const FormSchema = Yup.object({
-  name: Yup.string()
-    .min(4, 'Too Short')
-    .max(15, 'Too Long')
-    .required('Required'),
-
-  email: Yup.string()
-    .required("Required"),
-
-  department: Yup.string()
-    .required("required"),
-
-  time: Yup.string()
-    .required("required"),
-
-
-})
 
 
 
 const Form = () => {
   const dispatch = useDispatch();
- 
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -38,18 +19,22 @@ const Form = () => {
 
     onSubmit: (values) => {
       const requestData = { name: values.name, email: values.email, department: values.department, time: values.time };
-      dispatch(fetchContent(requestData))
+      if (values.name === '' || values.email === '' || values.department === '' || values.time === '') {
+        alert('Fields can not be empty')
+      } else {
 
-      fetch("http://localhost:3000/appointments/")
-      .then((res) => res.json())
-      .then((result) => dispatch(getAppointment(result)))
-      .catch(error => console.log(error.message))
-
+        dispatch(fetchContent(requestData))
+        fetch("http://localhost:3000/appointments/")
+          .then((res) => res.json())
+          .then((result) => dispatch(getAppointment(result)))
+          .catch(error => console.log(error.message));       
+      }
 
       values.name = '';
       values.email = '';
       values.department = '',
       values.time = ''
+
     },
 
     onChange: (event) => {
@@ -58,21 +43,21 @@ const Form = () => {
       console.log(name, value);
     },
 
-    validationSchema: FormSchema,
+
 
   });
 
 
- 
 
- 
+
+
 
   return (
     <form className="home-form" onSubmit={formik.handleSubmit}>
       <h3 className='home-form-title'>Book  Appointment</h3>
       <label htmlFor="name">Name*</label>
       <input name="name"
-      
+
         value={formik.values.name}
         onChange={formik.handleChange}
         id="name" type="text"
@@ -110,13 +95,9 @@ const Form = () => {
         <option value="3:20">3:20</option>
         <option value="7:30">7:30</option>
       </select>
-      <div className="home-form-btn">
 
-      <p className='error-field'>
-        {formik.touched.message && formik.errors.message
-          ? formik.errors.message
-          : ""}
-         </p>
+
+      <div className="home-form-btn">
         <button type="submit">Book Appointment</button>
       </div>
 
