@@ -35,24 +35,7 @@ const appointmentSlice = createSlice({
             console.log('payload', action.payload)
         },
     },
-
-    // extraReducers: (builder) => {
-    //     builder.addCase(fetchContent.pending, (state) => {
-    //       state.isLoading = true
-    //     })
-    //     builder.addCase(fetchContent.fulfilled, (state, action) => {
-    //       state.isLoading = false
-    //       state.formData.name = action.payload.name;
-    //       state.formData.email = action.payload.email;
-    //       state.formData.department = action.payload.department;
-    //       state.formData.time = action.payload.time;
-          
-    //     })
-    //     builder.addCase(fetchContent.rejected, (state, action) => {
-    //       state.isLoading = false
-    //       state.error = action.error.message
-    //     })
-    //   },
+ 
 
 });
 
