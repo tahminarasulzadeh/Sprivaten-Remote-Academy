@@ -42,7 +42,7 @@
 .navbar {
   display: flex;
   justify-content: flex-start;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 30%;
 
 }
@@ -109,7 +109,11 @@
   .navbar-mobile {
     display: flex;
   }
+  .navbar-items a {
+    font-size:25px;
+  }
 
+  
   .navbar-mobile-list {
     display: flex;
     flex-direction: column;
@@ -117,7 +121,7 @@
 
   .navbar-toggler {
     display: block;
-
+    width: 25px;
   }
 
   .navbar-general {
