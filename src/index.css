@@ -21,7 +21,7 @@ body {
   .container {
     width: 80%; /* Set the width of the container */
     margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding inside the container */
+    padding: 50px 0px 50px 0px; /* Add padding inside the container */
     box-sizing: border-box; /* Include padding and border in the width */
 }
 

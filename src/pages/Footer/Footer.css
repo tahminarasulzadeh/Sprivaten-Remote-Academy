@@ -11,7 +11,7 @@
 }
 
 .footer-header h3 {
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -69,7 +69,7 @@
     flex-direction: column;
 }
 .footer-info h5{
- font-family: "Montserrat" sans-serif;
+ font-family: "Montserrat", sans-serif;
  font-weight: 700;
  font-size: 16px;
  line-height: 24px;
@@ -80,7 +80,7 @@
 .footer-info a{
   /* width: 69px; */
   height: 24px;
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -106,7 +106,7 @@
 }
 
 .footer-input input::placeholder{
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-family: 14px;
     line-height: 28px;
@@ -116,7 +116,7 @@
 }
 .footer-input button {
     width: 117px;
-    height: 56px;
+    height: 60px;
     padding: 0px 5px 5px 0px;
     background-color: #ffa62b;
     border-radius: 0px 5px 5px 0px;
@@ -124,7 +124,7 @@
     
     /* BTN TEXT */
 
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;

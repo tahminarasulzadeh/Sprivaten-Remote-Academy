@@ -1,111 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.home-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 328px;
-    height: 619px;
+
+
+
+@media only screen and (max-width: 768px){
+    .home-form {
+        margin-left: 0;
+    }
+} 
+
+.form-layout{
+    max-width: 330px;
+    max-height: 619px;
+    background-color: #FFF;
     border-radius: 10px;
+    padding-top: 50px;
+    gap: 40px;
     padding: 40px;
-    gap: 20px;
-    background-color: #fff;
-    /* margin-left: 10%; */
 }
 
+.home-form-title{
+    font-family: "Montserrat" ,sans-serif;
 
-.home-form-title {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+    margin-top: 0px;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    left: 0.1px;
-
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #252B42;
+    
 }
 
-.home-form label {
-    width: 50px;
-    color: #252B42;
+.form-layout form {
+    display: flex;
+    justify-content: center;
+}
 
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content  label {
+    width: 50px;
+    height: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 24px;
+     line-height: 24px;
     letter-spacing: 0.2px;
+     color: #252B42;
+     margin-top: 11px;
 }
 
-.home-form input {
-    width: 245px;
- 
+.form-content  input {
+  width: 245px;
+  height: 28px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  margin-left: 2.5px;
+  border-radius: 5px;
+  border: 1px solid  #BDBDBD;
+  background-color: #F9F9F9;
+   padding: 11px 0 11px 21px;
 }
 
-.home-form input,
-.home-form select {
+.form-content select {
+    width: 268px;
     height: 50px;
-    background-color: #F9F9F9;
-    margin-left: 2.5px;
-    border: 1px solid #BDBDBD;
+    margin-top: 23px;
+    margin-left: -0.5px;
     border-radius: 5px;
-    padding-left: 21px;
-  
-}
-
-
-.home-form select {
-    width: 270px;
-    color: #737373;
+    border: 1px solid  #BDBDBD;
+    background-color: #F9F9F9;
+   padding: 11px 0 11px 21px;
+   
 
 }
 
-.home-form option {}
 
-.home-form input::placeholder,
-.home-form select {
-
+.form-content  input::placeholder , .form-content select{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.2px;
+    color: #737373;
+    
+}
+
+.form-content  input:focus , .form-content select:focus{
+    outline: none;
 }
 
 .home-form-btn {
-    display: flex;
-    justify-content: left;
-
-}
-
-.home-form-btn button {
-    width: 248px;
+    width: 268px;
     height: 58px;
-    border-radius: 5px;
-    gap: 10px;
-    padding: 15px 40px 15px 40px;
-    background-color: #FFA62B !important;
     border: none;
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700px  !important;
-    font-size: 14px;
-    letter-spacing: 0.2px;
+    border-radius: 5px;
+    margin-top: 36px;
+    padding: 15px, 40px, 15px, 40px;
+    gap: 10px;
+    background-color: #FFA62B;
+    color: #fff;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
     line-height: 28px;
-    cursor: pointer !important;
-  
+    letter-spacing: 0.2px;
+    cursor: pointer;
 }
 
-.home-form input:focus,
-.home-form select:focus{
-    outline: none;
-} 
-
-.error-field {
+.toast-msg{
     color: red;
 }
-@media only screen and (max-width: 768px){
-    .home-form {
-        margin-left: 0;
-    }
+
+.success-msg{
+ color: green
+}
+.toast-messages{
+    height: 15px;
+}
+
+.toast-msg ,.success-msg{
+    font-family: "Montserrat", sans-serif;
+
 }

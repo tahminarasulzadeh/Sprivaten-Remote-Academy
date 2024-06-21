@@ -1,5 +1,5 @@
 import '../Form/Form.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContent, getAppointment } from '../../redux/reducers/appointmentSlice';
@@ -8,6 +8,9 @@ import { fetchContent, getAppointment } from '../../redux/reducers/appointmentSl
 
 const Form = () => {
   const dispatch = useDispatch();
+
+ const [toast, setToast] = useState('');
+ const [success, setSucces] = useState('');
 
   const formik = useFormik({
     initialValues: {
@@ -20,20 +23,23 @@ const Form = () => {
     onSubmit: (values) => {
       const requestData = { name: values.name, email: values.email, department: values.department, time: values.time };
       if (values.name === '' || values.email === '' || values.department === '' || values.time === '') {
-        alert('Fields can not be empty')
+        setToast('Fields can not be empty')
+        setSucces('')
       } else {
-
+        setToast('');
+        setSucces("Form submitted successfully!")
         dispatch(fetchContent(requestData))
         fetch("http://localhost:3000/appointments/")
           .then((res) => res.json())
           .then((result) => dispatch(getAppointment(result)))
-          .catch(error => console.log(error.message));       
+          .catch(error => console.log(error.message));
+          values.name = '';
+          values.email = '';
+          values.department = '',
+          values.time = ''       
       }
 
-      values.name = '';
-      values.email = '';
-      values.department = '',
-      values.time = ''
+   
 
     },
 
@@ -48,61 +54,49 @@ const Form = () => {
   });
 
 
-
-
-
-
   return (
-    <form className="home-form" onSubmit={formik.handleSubmit}>
-      <h3 className='home-form-title'>Book  Appointment</h3>
-      <label htmlFor="name">Name*</label>
-      <input name="name"
+    <div className ="form-layout">
+   <h3 className='home-form-title'>Book Appointment</h3> 
+   <div className='toast-messages'>
+   <p className='toast-msg'>{toast}</p>
+   <p className='success-msg'>{success}</p>
+   </div>
 
-        value={formik.values.name}
-        onChange={formik.handleChange}
-        id="name" type="text"
-        placeholder='Full Name '
-        {...formik.getFieldProps("name")} />
+     <form  onSubmit={formik.handleSubmit}>
+      <div className="form-content">
+    <label htmlFor="name">Name*</label>
+    <input type="text" id="name" name="name" value={formik.values.name}
+        onChange={formik.handleChange}  placeholder='Full Name'    {...formik.getFieldProps("name")}/>
 
-      <label htmlFor="email" >Email*</label>
-      <input name="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-        id="email"
-        type="email"
-        placeholder='example@gmail.com'
-        {...formik.getFieldProps("email")}
-      />
-
-      <label htmlFor='department'>Department*</label>
-      <select value={formik.values.department}
-        onChange={formik.handleChange}
-        name="department"
-        id="department"
-        {...formik.getFieldProps("department")}>
-        <option value="Please Select">Please Select</option>
+    <label htmlFor="email">Email*</label>
+    <input type="email" id="email" name="email" onChange={formik.handleChange}
+        value={formik.values.email}placeholder='example@gmail.com'    {...formik.getFieldProps("email")}/>
+ 
+    <label htmlFor="department">Department*</label>
+    <select name="department" id="department" value={formik.values.department} onChange={formik.handleChange}  {...formik.getFieldProps("department")}>
+    <option value="Please Select">Please Select</option>
         <option value="sales">Sales</option>
         <option value="marketing">Marketing</option>
         <option value="ıt">IT</option>
         <option value="accounting">Accounting</option>
-      </select>
+    </select>
+   
 
-
-      <label htmlFor='time'>Time*</label>
-
-      <select value={formik.values.time} onChange={formik.handleChange} name="time" id="time" {...formik.getFieldProps("time")}>
-        <option value="4:00 Available">4:00 Available</option>
+    <label htmlFor="time">Time*</label>
+    <select name="time" id="time" value={formik.values.time}
+        onChange={formik.handleChange}  {...formik.getFieldProps("time")}>
+    <option value="4:00 Available">4:00 Available</option>
         <option value="3:20">3:20</option>
         <option value="7:30">7:30</option>
-      </select>
+    </select>
 
 
-      <div className="home-form-btn">
-        <button type="submit">Book Appointment</button>
+    <button className='home-form-btn'>Book Appointment</button>
       </div>
+    
+     </form>
+    </div>
 
-
-    </form>
   )
 }
 

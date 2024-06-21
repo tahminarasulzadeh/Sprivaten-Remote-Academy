@@ -16,9 +16,8 @@ const Navbar = () => {
     return (
         <>
             <div className="navbar-general">
-
                 <a href="#" className="brand-name">Sprivaten</a>
-
+             
                 <div className="navbar">
                     <ul className="navbar-list">
                         <li>  <a className="active" href="#home">Home</a></li>
