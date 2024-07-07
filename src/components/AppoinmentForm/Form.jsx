@@ -3,8 +3,15 @@ import '../AppoinmentForm/Form.css'
 const Form = () => {
     return (
         <div className="contact-form-content">
+           <div className="contact-titles">
+            <div>
             <h5 className='contact-form-title'>Contact us</h5>
-            <h2>Make an Appoinment</h2>
+            <h2>Make an <br/>Appoinment</h2>
+            </div>
+         
+           </div>
+            
+            <div className="contact-form-general">
             <div className="contact-form-items">
                 <div className="name-email">
                     <input type="text" placeholder='Full Name' />
@@ -12,7 +19,7 @@ const Form = () => {
                 </div>
                 <div className="department-time">
 
-                    {/* <select name="department" id="department">
+                    <select name="department" id="department">
                         <option selected>Please Select</option>
                         <option value="sales">Sales</option>
                         <option value="marketing">Marketing</option>
@@ -24,12 +31,17 @@ const Form = () => {
                         <option selected>4:00 Available</option>
                         <option value="3:20">3:20</option>
                         <option value="7:30">7:30</option>
-                    </select> */}
+                    </select>
                 </div>
                <textarea name="message" id="message"  placeholder='Message'></textarea>
 
-               <button className='contact-btn'>Book Appointment</button>
+               <div className="contact-btn">
+               <input class="contact-btn" type="button" value="Book Appointment" />
+
+               </div>
             </div>
+            </div>
+            
         </div>
     )
 }

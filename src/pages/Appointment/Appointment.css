@@ -13,17 +13,15 @@
 }
 
 @media only screen and (max-width: 968px) {
-    
+    .appointment{
+        padding-bottom: 100px;
+    }
     .appointment-form {
         justify-content: center;
     }
 
 
-    .appointment-form {
-        display: flex;
-        justify-content: center;
-        /* width: 400px; */
-    }
+   
 
 
 }
