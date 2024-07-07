@@ -13,9 +13,7 @@
     margin-top: 3%;
 }
 
-.provide-video  iframe{
-    width: 877px;
-    height: 447px;
+.provide-video  video{
     margin-bottom: -400px;
      
 
@@ -34,12 +32,11 @@
     margin-top: 130px;
    }
     .provide-video{
-        margin-top: 5%;
+        margin-top: 7%;
+      
     }
-    .provide-video iframe {
-        width: 356px;
-        height: 500px;
-        margin-bottom: -311px;
+    .provide-video video {
+     margin-bottom: -311px;
     }
     .provide-bg{
         height: 410px;  

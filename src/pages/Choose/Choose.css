@@ -31,14 +31,13 @@
         text-align: center;
     }
 
-   
+    
     .choose-cards {
         display: flex;
         justify-content: center;
         
     }
     .choose-cards-content {
-      
         flex-direction: column;
        
     }

@@ -9,9 +9,13 @@ const Provide = () => {
         <p className='text'> Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics  </p>
         <div className="provide-video">
-          <iframe
+          {/* <iframe
             src={video}>
-          </iframe>
+          </iframe> */}
+
+          <video width="877"  controls>
+            <source src={video} type="video/mp4" />
+          </video>
         </div>
 
       </div>

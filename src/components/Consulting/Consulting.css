@@ -6,6 +6,7 @@
     letter-spacing: 0.1px;
     color: #252b42;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .consulting-data p {
@@ -24,11 +25,9 @@
 }
 
 .consulting-btn  button{
-    margin-top: 30px;
     width: 160px;
     height: 58px;
     border-radius: 5px;
-    /* padding: 15px 40px 15px 40px; */
     gap: 10px;
     background-color: #ffa62b;
 
@@ -60,12 +59,14 @@ justify-content: center;
 .consulting-data h3 , .consulting-data p{
     text-align: left;
 
+} 
+.consulting-btn {
+    margin-top: 30px;
 }
 
 .consulting-data h3{
     width: 245px;
     height: 64px;
-    /* margin-bottom: ; */
 }
 .consulting-data p{
     width: 184px;

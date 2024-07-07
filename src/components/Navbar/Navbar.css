@@ -55,7 +55,7 @@
 
 .navbar-items {
   gap: 21px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .navbar-toggler {
@@ -90,7 +90,6 @@
 
 .navbar-mobile {
   background-color: #fff;
-
   justify-content: center;
   display: none;
 }

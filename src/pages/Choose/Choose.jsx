@@ -11,7 +11,7 @@ const Choose = () => {
             <div className="choose-content">
                
                <div className="choose-paragraph">
-                 <h2 className="title">WHY CHOOSE US</h2>
+                 <h2 className="title">WHY <br/> CHOOSE US</h2>
                      <p className="text">Problems trying to resolve the conflict between<br />
                          the two major realms of Classical physics: Newtonian mechanics </p>
            
