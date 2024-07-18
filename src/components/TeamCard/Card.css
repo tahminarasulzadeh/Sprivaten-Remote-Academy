@@ -1,5 +1,5 @@
 .team-card {
-    width: 328px;
+    max-width: 300px;
     height: 373px;
     border: 1px solid #eeeeee;
 }
@@ -45,4 +45,8 @@
     width: 24px;
     height: 24px;
     color: #00A0C1;
+}
+
+.team-card img {
+ width: 250px;
 }
