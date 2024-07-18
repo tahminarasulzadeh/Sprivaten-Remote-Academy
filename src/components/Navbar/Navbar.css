@@ -129,8 +129,8 @@
 
   .navbar-general {
     justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   .navbar-general {
@@ -141,4 +141,12 @@
   .navbar-mobile-list li a {
     font-size: 24px;
   }
+}
+
+
+@media only screen and (max-width: 355px) {
+  .navbar-general a {
+    font-size: 24px;
+  }
+ 
 }
