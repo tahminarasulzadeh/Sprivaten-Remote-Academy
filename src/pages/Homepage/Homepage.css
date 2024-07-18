@@ -106,8 +106,8 @@
    }
 
    .home-text{
-    width: 376px;
-    height: 60px;
+    max-width: 376px;
+    max-height: 60px;
    }
    .home-card{
     margin-bottom: 50px;
