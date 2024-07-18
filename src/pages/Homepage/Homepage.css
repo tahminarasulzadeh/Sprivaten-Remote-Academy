@@ -83,7 +83,7 @@
  
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1150px) {
    .home {
     background-image: url("../../assets/4654e9d3c9c505537d31266e6d612eb5.jpeg");
     background-repeat: no-repeat;
@@ -101,6 +101,7 @@
   
    .home-title{
     width: 328px;
+    font-size: 40px;
     /* height: 171px; */
    }
 
@@ -130,9 +131,9 @@
 
 
 
-@media only screen and (max-width: 968px) {
+/* @media only screen and (max-width: 968px) {
 
   .home-title{
     font-size: 40px;
   }  
-}
+} */
