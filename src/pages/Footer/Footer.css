@@ -134,6 +134,8 @@
     border: 1px solid #E6E6E6;
     position: absolute;     
     right: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -170,5 +172,6 @@ justify-content: left;
 
     .footer-input button{
         height:56px
+       
     }
 }

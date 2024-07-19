@@ -56,7 +56,7 @@ display: none;
 }
 
 .department-time select {
-    width: 300px !important
+    width: 307px !important
 }
 
 .name-email input::placeholder,
@@ -107,6 +107,35 @@ display: none;
     text-align: center;
     color: #fff;
     cursor: pointer;
+}
+
+.select-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
+}
+
+.select-wrapper .dropdown {
+    margin-top: 5%;
+    
+    font-size: 23px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    appearance: none; 
+      -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 150px; /* Space for the custom arrow */
+    cursor: pointer;
+   
 }
 
 @media only screen and (max-width: 968px) {

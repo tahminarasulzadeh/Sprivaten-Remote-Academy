@@ -68,7 +68,8 @@
 }
 
 .form-content select {
-    width: 268px;
+    max-width: 328px;
+    
     height: 50px;
     margin-top: 23px;
     margin-left: -0.5px;
@@ -129,6 +130,35 @@
     font-family: "Montserrat", sans-serif;
 
 }
+
+.custom-select-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 268px;
+
+}
+
+.custom-select-wrapper .dropdown {
+    margin-top: 13%;
+    font-size: 23px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.custom-select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    appearance: none; 
+      -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 130px; /* Space for the custom arrow */
+    cursor: pointer;
+   
+}
+
 
 @media only screen and (max-width: 355px) {
     .form-layout{

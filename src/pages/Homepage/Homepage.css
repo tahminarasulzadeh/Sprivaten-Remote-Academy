@@ -14,7 +14,7 @@
 .home-content {
     display: flex;
     justify-content: center;
-    gap:200px
+    gap: 200px
 }
 
 .home-title {
@@ -35,7 +35,7 @@
 
 .home-buttons {
     display: flex;
-    
+
 }
 
 
@@ -78,80 +78,92 @@
     transition: 1s ease;
 }
 
-.home-form-content{
+.home-form-content {
     gap: 50px;
- 
+
 }
 
 @media only screen and (max-width: 1150px) {
-   .home {
-    background-image: url("../../assets/4654e9d3c9c505537d31266e6d612eb5.jpeg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100%;
-   }
-
-   .home-content{
-    flex-direction: column;
-    gap: 20px
-   }
-   .home-title, .home-text {
-    text-align: center;
-   }
-  
-   .home-title{
-    line-height: 57px;
-    font-size: 40px;
-    /* height: 171px; */
-   }
-
-   .home-text{
-    max-width: 376px;
-    max-height: 60px;
-   }
-   .home-card{
-    margin-bottom: 50px;
-   }
-
-   .home-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-   
-}
-
-
-.home-info{
-    display: flex;
-    justify-content: center;
+    .home {
+        background-image: url("../../assets/4654e9d3c9c505537d31266e6d612eb5.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
     }
-    
-    .home-form-content{
+
+    .home-content {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .home-title,
+    .home-text {
+        text-align: center;
+    }
+
+    .home-title {
+        line-height: 57px;
+        font-size: 40px;
+        /* height: 171px; */
+    }
+
+    .home-text {
+        max-width: 376px;
+        max-height: 60px;
+    }
+
+    .home-card {
+        margin-bottom: 50px;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+
+    .home-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-form-content {
         display: flex;
         justify-content: center;
     }
 
 
- 
-}
 
+}
 
 
 @media only screen and (max-width: 355px) {
 
-  .home-title{
-    font-size: 30px;
-  }  
+    .home-title {
+        font-size: 30px;
+    }
 
-  .home-text{
-    max-width: 230px;
-    max-height:50px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 17px;
-  }
+    .home-text {
+        max-width: 230px;
+        max-height: 50px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 17px;
+    }
 
- 
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+
+
+    .home-button-quote {
+        margin-left: 0;
+    }
+
 }
