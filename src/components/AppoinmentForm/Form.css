@@ -55,9 +55,7 @@ display: none;
     border: 1px solid #bdbdbd;
 }
 
-.department-time select {
-    width: 307px !important
-}
+
 
 .name-email input::placeholder,
 .department-time select,
