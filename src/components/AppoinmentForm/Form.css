@@ -111,29 +111,28 @@ display: none;
     position: relative;
     display: flex;
     justify-content: center;
-    width: 300px;
-
-}
-
-.select-wrapper .dropdown {
-    margin-top: 5%;
+    width: 306px;
     
-    font-size: 23px;
-    margin-left: -30px;
-    cursor: pointer;
+
 }
+
+
 .select-wrapper select {
+    border: unset;
+
+    /* Style */
     width: 100%;
-    padding: 10px;
-    appearance: none; 
-      -webkit-appearance: none; 
-    -moz-appearance: none; 
-    background: #f9f9f9;
+    max-width: 400px;
+    padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-right: 150px; /* Space for the custom arrow */
-    cursor: pointer;
-   
+  
+    /* Arrow */
+    appearance: none;
+    background-image: url("../../assets/52-520060_free-png-download-down-arrow-grey-png-images.png");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+    cursor:pointer
 }
 
 @media only screen and (max-width: 968px) {

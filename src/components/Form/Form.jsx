@@ -84,8 +84,7 @@ const Form = () => {
               <option value="accounting">Accounting</option>
 
             </select>
-            <MdOutlineArrowDropDown className='dropdown' />
-          </div>
+               </div>
 
 
           <label htmlFor="time">Time*</label>
@@ -96,7 +95,6 @@ const Form = () => {
               <option value="3:20">3:20</option>
               <option value="7:30">7:30</option>
             </select>
-            <MdOutlineArrowDropDown className='dropdown' />
           </div>
 
           <button className='home-form-btn'>Book Appointment</button>

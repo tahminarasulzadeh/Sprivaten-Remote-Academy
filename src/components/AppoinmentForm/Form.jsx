@@ -27,23 +27,23 @@ const Form = () => {
                                 <option value="ıt">IT</option>
                                 <option value="accounting">Accounting</option>
                             </select>
-                            <MdOutlineArrowDropDown className='dropdown' />
+                         
                         </div>
 
 
                         <div className="select-wrapper">
                             <select name="time" id="time">
-                                <option selected>4:00 Available</option>
+                                <option defaultValue="4:00 Available">4:00 Available</option>
                                 <option value="3:20">3:20</option>
                                 <option value="7:30">7:30</option>
                             </select>
-                            <MdOutlineArrowDropDown className='dropdown' />
+                           
                             </div>
                     </div>
                     <textarea name="message" id="message" placeholder='Message'></textarea>
 
                     <div className="contact-btn">
-                        <input class="contact-btn" type="button" value="Book Appointment" />
+                        <input className="contact-btn" type="button" value="Book Appointment" />
 
                     </div>
                 </div>
