@@ -139,6 +139,11 @@
 }
 
 
+@media only screen and (max-width: 1050px) {
+.footer-info a {
+    font-size: 12px;
+}
+}
 @media only screen and (max-width: 968px) {
    .footer-header {
     flex-direction: column;
